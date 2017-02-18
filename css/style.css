@@ -1,0 +1,84 @@
+html {
+  font-size: 100px; }
+
+#index-wrap {
+  width: 100%; }
+  #index-wrap .index-header {
+    width: 100%;
+    height: .38rem;
+    background: #0097FF;
+    display: -webkit-box; }
+    #index-wrap .index-header div {
+      -webkit-box-flex: 1;
+      line-height: .38rem;
+      color: #fff;
+      font-size: 24px;
+      padding-left: 4%; }
+      #index-wrap .index-header div h3 {
+        text-align: center;
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        right: 0; }
+  #index-wrap .index-nav {
+    width: 100%;
+    height: .38rem;
+    display: -webkit-box;
+    border-bottom: 1px solid #ccc; }
+    #index-wrap .index-nav span {
+      line-height: .20rem;
+      text-align: center;
+      border-right: 1px solid #ccc;
+      display: block;
+      -webkit-box-flex: 1;
+      margin: .07rem 0;
+      font-size: 14px; }
+  #index-wrap .index-cont {
+    width: 96%;
+    margin: 0 2%;
+    overflow: hidden; }
+    #index-wrap .index-cont .list {
+      width: 100%;
+      display: -webkit-box;
+      -webkit-box-pack: justify;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee; }
+      #index-wrap .index-cont .list .list-left {
+        display: -webkit-box; }
+        #index-wrap .index-cont .list .list-left dt {
+          width: 62px;
+          -webkit-box-flex: 1;
+          padding-right: 3px; }
+          #index-wrap .index-cont .list .list-left dt img {
+            width: 100%; }
+        #index-wrap .index-cont .list .list-left dd {
+          line-height: .18rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+          #index-wrap .index-cont .list .list-left dd h2 {
+            font-size: 16px;
+            max-width: 160px; }
+          #index-wrap .index-cont .list .list-left dd p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 130px; }
+            #index-wrap .index-cont .list .list-left dd p em {
+              width: 50px;
+              font-style: normal; }
+            #index-wrap .index-cont .list .list-left dd p i {
+              font-style: normal; }
+            #index-wrap .index-cont .list .list-left dd p .red {
+              color: #FF9556; }
+            #index-wrap .index-cont .list .list-left dd p span {
+              padding-left: 4px;
+              padding-right: 4px; }
+      #index-wrap .index-cont .list .list-right p {
+        line-height: .23rem; }
+        #index-wrap .index-cont .list .list-right p .zhun {
+          border: 1px solid #2F9BFF;
+          color: #2F9BFF; }
+        #index-wrap .index-cont .list .list-right p .feng {
+          color: #fff;
+          background: #2F9BFF; }

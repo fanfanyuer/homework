@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="scss/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="lib/font/css/font-awesome.min.css">
+</head>
+<body ng-app="mapp">
+	<div id="index-wrap">
+		<header class="index-header">
+			<div class="header-back"><i class="fa fa-angle-left"></i></div>
+			<div>
+				<h3>美食</h3>
+			</div>
+			<div></div>
+		</header>
+		<nav class="index-nav">
+			<span>美食</span>
+			<span>排序</span>
+			<span>筛选</span>
+		</nav>
+		<div class="index-cont" ng-controller="mylist">
+			<section class="list" ng-repeat="x in data.data">
+				<dl class="list-left">
+					<dt><img src="imgs/sal.png" alt=""></dt>
+					<dd>
+						<h2 ng-bind="x.name">余万演职</h2>
+						<p><img src="imgs/star.png" alt=""><span ng-bind="x.rating" class="red">4.5</span>月销量<i ng-bind="x.rating_count"></i>单</p>
+						<p><b>{{x.float_minimum_order_amount}}起送</b>/<em ng-bind="x.piecewise_agent_fee.description"></em></p>
+					</dd>
+				</dl>
+				<div class="list-right">
+					<p>包票准</p>
+					<p><b class="zhun">准时达</b><span ng-bind="x.delivery_mode.text" class="feng">蜂鸟转送</span></p>
+					<p><span>528</span>/<i>45分钟</i></p>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-ui-router.min.js"></script>
+	<script src="js/style.js"></script>
+
+</body>
+</html>
